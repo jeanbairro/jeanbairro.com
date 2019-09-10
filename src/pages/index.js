@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "../components/header"
+import Container from "../components/container/container"
+import Header from "../components/header/header"
 
 export default () => (
-    <div style={{ color: `purple` }}>
-        <Header headerText="Index Gatsby" />
-        <h1>Olá Nhiblo!</h1>
-        <p>Que passa hombre?</p>
-    </div>
+  <Container>
+    <Header />
+    <h1>jeanbairro.com</h1>
+  </Container>
 )
