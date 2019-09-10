@@ -1,7 +1,7 @@
 #  jeanbairro.com 
-[:tw-1f4a9:](https://cranky-knuth-b5765c.netlify.com/) --> não clique
+[blog](https://cranky-knuth-b5765c.netlify.com/) --> não clique
 
-###Stack :tw-1f4ac:
+###Stack
 - Gatsby (React + GraphQL)
 - Netlify
 - loading...
