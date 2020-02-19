@@ -1,5 +1,5 @@
 #  jeanbairro.com 
-[blog](https://cranky-knuth-b5765c.netlify.com/) --> não clique
+[blog](https://jeanbairro.netlify.com/)
 
 ### Stack
 - Gatsby (React + GraphQL)
