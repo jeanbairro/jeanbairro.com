@@ -9,6 +9,13 @@ module.exports = {
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: 'post/*.md',
+      }
     } 
   ],
 }

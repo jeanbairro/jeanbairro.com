@@ -1,27 +1,32 @@
 <template>
   <Layout>
     <section>
-      <post 
-          title="Conheça Amanda, a mulher mais linda do mundo"
-          subtitle="Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores."
-          time="20 de maio, 2020"
-          :tags="['beleza', 'miss', 'modelo']">
-        </post>
-        <post 
-          title="Conheça Maicão, o bomber-man brasileiro"
-          subtitle="Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores."
-          time="20 de maio, 2020"
-          :tags="['fisiculturismo', 'bomba', 'cavalo']">
-        </post>
-        <post 
-          title="Conheça Maicão, o bomber-man brasileiro"
-          subtitle="Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores."
-          time="20 de maio, 2020"
-          :tags="['fisiculturismo', 'bomba', 'cavalo']">
+        <post v-for="edge in $page.allPost.edges" :key="edge.node.id"
+          :title="edge.node.title"
+          :subtitle="edge.node.subtitle"
+          :time="edge.node.date"
+          :tags="edge.node.tags">
         </post>
     </section>
   </Layout>
 </template>
+
+<page-query>
+query {
+  allPost(sortBy: "date", order: DESC) {
+    edges {
+      node {
+        id,
+        title,
+        subtitle,
+        date,
+        timeToRead,
+        tags
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import post from '~/components/list/post/post.vue'
@@ -36,9 +41,11 @@ export default {
 }
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style lang="less">
+.home-links {
+  a {
+    margin-right: 1rem;
+  }
 }
 section {
   max-width: 50rem;
