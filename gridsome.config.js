@@ -6,5 +6,9 @@
 
 module.exports = {
   siteName: 'jeanbairro.com',
-  plugins: [],
+  plugins: [
+    {
+      use: `gridsome-plugin-netlify-cms`
+    } 
+  ],
 }
