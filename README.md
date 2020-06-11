@@ -1,7 +1,2 @@
-#  jeanbairro.com 
-[blog](https://jeanbairro.netlify.com/)
-
-### Stack
-- Gatsby (React + GraphQL)
-- Netlify
-- loading...
+#  jeanbairro.com ![CI](https://github.com/jeancasulo/jeanbairro.com/workflows/CI/badge.svg?branch=master)
+[https://jeanbairro.netlify.com/](https://jeanbairro.netlify.com/)
