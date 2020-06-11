@@ -1,7 +1,2 @@
 #  jeanbairro.com 
-[blog](https://jeanbairro.netlify.com/)
-
-### Stack
-- Gatsby (React + GraphQL)
-- Netlify
-- loading...
+[https://jeanbairro.netlify.com/](https://jeanbairro.netlify.com/)
