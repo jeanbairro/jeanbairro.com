@@ -41,7 +41,7 @@ export default {
   margin-right: 1rem;
 }
 section {
-  max-width: 65rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 </style>
