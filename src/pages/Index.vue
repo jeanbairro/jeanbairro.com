@@ -2,10 +2,10 @@
   <Layout>
     <section>
       <post 
-          title="Conheça Maicão, o bomber-man brasileiro"
+          title="Conheça Amanda, a mulher mais linda do mundo"
           subtitle="Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores."
           time="20 de maio, 2020"
-          :tags="['fisiculturismo', 'bomba', 'cavalo']">
+          :tags="['beleza', 'miss', 'modelo']">
         </post>
         <post 
           title="Conheça Maicão, o bomber-man brasileiro"
