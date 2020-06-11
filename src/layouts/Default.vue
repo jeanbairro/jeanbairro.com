@@ -25,33 +25,27 @@ query {
 </static-query>
 
 <style lang="less">
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
 .layout {
+  font-size: 1.2rem;
   margin: 0 auto;
-}
 
-.header {
-  align-items: center;
-  background-color: black;
-  display: flex;
-  height: 65px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 0 100px;
+  .header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 65px;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    padding: 0 5rem;
 
-  a {
-    color: #f1f1f1;
-    margin-right: 0.8rem;
+    a {
+      color: #f1f1f1;
+      margin-right: 1rem;
 
-    &:hover {
-      color: #fff;
-      text-decoration: none;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }

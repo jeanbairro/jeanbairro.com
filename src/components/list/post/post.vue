@@ -1,5 +1,5 @@
 <template src="./post.html"></template>
-<style lang="less" link="./post.less"></style>
+<style lang="less" src="./post.less"></style>
 
 <script>
 export default {

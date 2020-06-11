@@ -1,0 +1,42 @@
+.post {
+    box-shadow: 0 1px 3px rgba(18,18,18,0.12);
+    color: rgba(15,15,15,0.95);
+    margin-bottom: 2.4rem;
+    padding: 1.4rem;
+
+    h1 {
+        font-size: 1.6rem
+    }
+
+    h2 {
+        color: #757575;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    time {
+        color: #757575;
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    ul {
+        font-size: 1rem;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            &::before {
+                content: ","
+            }
+
+            &:first-child {
+                &::before {
+                    content: "";
+                }
+            }
+        }
+    }
+}
