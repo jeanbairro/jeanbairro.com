@@ -1,12 +1,16 @@
 <template>
   <Layout>
     <section>
-        <post v-for="edge in $page.allPost.edges" :key="edge.node.id"
+      <g-link v-for="edge in $page.allPost.edges" 
+        :key="edge.node.id" 
+        :to="edge.node.path">
+        <post 
           :title="edge.node.title"
           :subtitle="edge.node.subtitle"
           :time="edge.node.date"
           :tags="edge.node.tags">
         </post>
+      </g-link>
     </section>
   </Layout>
 </template>
@@ -16,12 +20,13 @@ query {
   allPost(sortBy: "date", order: DESC) {
     edges {
       node {
-        id,
-        title,
-        subtitle,
         date,
+        id,
+        path
+        subtitle,
+        tags,
         timeToRead,
-        tags
+        title
       }
     }
   }
@@ -29,7 +34,8 @@ query {
 </page-query>
 
 <script>
-import post from '~/components/list/post/post.vue'
+
+import post from '~/components/post/post.vue'
 
 export default {
   metaInfo: {
@@ -42,13 +48,14 @@ export default {
 </script>
 
 <style lang="less">
-.home-links {
-  a {
-    margin-right: 1rem;
-  }
-}
 section {
-  max-width: 50rem;
   margin: 0 auto;
+  max-width: 50rem;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 </style>

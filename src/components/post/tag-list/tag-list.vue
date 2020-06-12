@@ -1,25 +1,24 @@
-.post {
-    box-shadow: 0 1px 3px rgba(18,18,18,0.12);
-    color: rgba(15,15,15,0.95);
-    margin-bottom: 2.4rem;
-    padding: 1.4rem;
+<template>
+    <div v-if="tags.length > 0" class="tags">
+        <i class="fa fa-tags"></i>
+        <ul>
+            <li v-for="tag in tags" :key="tag">
+                {{ tag }}
+            </li>
+        </ul>
+    </div>
+</template>
 
-    h1 {
-        font-size: 1.6rem
+<script>
+
+export default {
+    props: {
+        tags: Array 
     }
+}
+</script>
 
-    h2 {
-        color: #757575;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-
-    time {
-        color: #757575;
-        font-size: 0.8rem;
-        letter-spacing: 0.1rem;
-    }
-
+<style lang="less">
     ul {
         display: inline-block;
         font-size: 1rem;
@@ -41,4 +40,4 @@
             }
         }
     }
-}
+</style>

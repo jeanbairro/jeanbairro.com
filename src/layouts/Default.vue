@@ -9,9 +9,11 @@
         <a href="https://www.linkedin.com/in/jean-bairro" target="_blank"><i class="fa fa-linkedin"></i></a>
       </nav>
     </header>
-    <div class="container">
-      <slot/>
-    </div>
+    <transition name="fade" appear>
+      <div class="container">
+        <slot/>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -29,6 +31,14 @@ query {
 .layout {
   font-size: 1.2rem;
   margin: 0 auto;
+
+  .fade-enter-active {
+    transition: opacity .3s;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
 
   .header {
     align-items: center;
