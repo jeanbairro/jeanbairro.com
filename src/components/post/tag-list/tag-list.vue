@@ -19,11 +19,16 @@ export default {
 </script>
 
 <style lang="less">
+.tags {
+    .fa {
+        font-size: 0.9rem;
+    }
     ul {
         display: inline-block;
-        font-size: 1rem;
+        font-size: 0.9rem;
         list-style: none;
-        margin-left: 0.4rem;
+        margin-bottom: 0;
+        margin-left: 0.2rem;
         padding: 0;
 
         li {
@@ -40,4 +45,5 @@ export default {
             }
         }
     }
+}
 </style>

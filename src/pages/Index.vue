@@ -7,7 +7,8 @@
         <post 
           :title="edge.node.title"
           :subtitle="edge.node.subtitle"
-          :time="edge.node.date"
+          :date="edge.node.date"
+          :time-to-read="edge.node.timeToRead"
           :tags="edge.node.tags">
         </post>
       </g-link>

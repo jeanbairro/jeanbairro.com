@@ -2,15 +2,15 @@
   <Layout>
     <section>
       <header>
-        <time>{{ $page.post.date }}</time>
+        <date-time :date="$page.post.date" :time-to-read="$page.post.timeToRead" />
         <h1>{{ $page.post.title }}</h1>
         <h2>{{ $page.post.subtitle }}</h2>
+        <tag-list :tags="$page.post.tags"/>
       </header>
       <article>
         <div v-html="$page.post.content"/>
       </article>
       <footer>
-        <tag-list :tags="$page.post.tags"/>
       </footer>
     </section>
   </Layout>
@@ -31,6 +31,7 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import dateTime from '~/components/post/date-time/date-time.vue'
 import tagList from '~/components/post/tag-list/tag-list.vue'
 
 export default {
@@ -40,6 +41,7 @@ export default {
     };
   },
   components: {
+    dateTime,
     tagList
   }
 }
@@ -59,14 +61,6 @@ export default {
           color: #757575;
           font-size: 1.5rem;
           font-weight: 400;
-      }
-
-      time {
-          color: #757575;
-          display: block;
-          font-size: 0.8rem;
-          letter-spacing: 0.1rem;
-          margin-bottom: 0.6rem;
       }
     }
 
