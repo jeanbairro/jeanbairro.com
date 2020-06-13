@@ -23,7 +23,7 @@ query {
       node {
         date,
         id,
-        path
+        path,
         subtitle,
         tags,
         timeToRead,

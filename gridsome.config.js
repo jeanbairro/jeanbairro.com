@@ -15,7 +15,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Post',
-        path: 'post/*.md',
+        path: 'content/post/*.md',
       }
     } 
   ],
