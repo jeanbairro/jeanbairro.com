@@ -7,6 +7,5 @@ date: 2020-06-13T14:48:06.632Z
 tags:
   - talento
   - nova trento
-  - ""
 ---
 oi
