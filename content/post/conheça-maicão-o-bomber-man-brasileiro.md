@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conheça maicão o bomber-man brasileiro
+title: Conheça Maicão o bomber-man brasileiro
 subtitle: Pariatur excepturi labore tempore expedita, et iste tenetur suscipit
   explicabo! Dolores, aperiam non officia eos quod asperiores.
 date: 2020-06-13T14:38:09.715Z
