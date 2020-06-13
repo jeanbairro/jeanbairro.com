@@ -10,8 +10,6 @@
       <article>
         <div v-html="$page.post.content"/>
       </article>
-      <footer>
-      </footer>
     </section>
   </Layout>
 </template>
