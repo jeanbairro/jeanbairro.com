@@ -66,4 +66,10 @@ export default {
       margin: 2rem 0;
     }
   }
+
+  .dark {
+    section {
+      color: #f5f5f5f2;
+    }
+  }
 </style>
