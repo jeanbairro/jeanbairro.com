@@ -1,0 +1,40 @@
+@smallAndUp: ~"only screen and (min-width: 576px)";
+
+.layout-header {
+    align-items: center;
+    background-color: #141d26;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    margin-bottom: 2.4rem;
+    padding: 0 1.2rem;
+
+    a {
+      color: #f1f1f1;;
+      margin-right: 1rem;
+
+      .fa {
+        font-size: 1.4rem
+      }
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+}
+.dark {
+    .layout-header {
+        box-shadow: 1px 1px #444;
+    }
+}
+@media @smallAndUp {
+    .layout-header {
+        height: 65px;
+        padding: 0 10rem;
+    }
+}

@@ -71,8 +71,10 @@ export default {
     section {
       color: #f5f5f5f2;
 
-      h2 {
-        color: #aaa;
+      header {
+        h2 {
+          color: #aaa;
+        }
       }
     }
   }

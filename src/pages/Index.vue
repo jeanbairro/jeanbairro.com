@@ -36,16 +36,16 @@ query {
 
 <script>
 
-import post from '~/components/post/post.vue'
+  import post from '~/components/post/post.vue'
 
-export default {
-  metaInfo: {
-    title: 'Home'
-  },
-  components: {
-    post
+  export default {
+    metaInfo: {
+      title: 'Home'
+    },
+    components: {
+      post
+    }
   }
-}
 </script>
 
 <style lang="less">
