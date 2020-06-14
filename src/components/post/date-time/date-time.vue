@@ -26,4 +26,9 @@ export default {
         letter-spacing: 0.1rem;
         margin-bottom: 0.6rem;
     }
+    .dark {
+        time {
+            color: #aaa;
+        }
+    }
 </style>

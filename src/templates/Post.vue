@@ -70,6 +70,10 @@ export default {
   .dark {
     section {
       color: #f5f5f5f2;
+
+      h2 {
+        color: #aaa;
+      }
     }
   }
 </style>

@@ -127,10 +127,6 @@ query {
         margin-right: 1rem;
         transition: color 0.5s ease 0s;
         width: 1.4rem;
-
-        &:hover {
-          color: #1fa1f2;
-        }
       }
     }
   }
@@ -155,6 +151,13 @@ query {
     .header {
       height: 65px;
       padding: 0 10rem;
+    }
+    .footer {
+      svg {
+        &:hover {
+          color: #1fa1f2;
+        }
+      }
     }
   }
 }
