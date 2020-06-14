@@ -40,7 +40,7 @@ import post from '~/components/post/post.vue'
 
 export default {
   metaInfo: {
-    title: 'Início'
+    title: 'Home'
   },
   components: {
     post

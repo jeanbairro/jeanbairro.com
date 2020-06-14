@@ -65,6 +65,7 @@ query {
 @smallAndUp: ~"only screen and (min-width: 576px)";
 
 .layout {
+  color: #141d26;
   font-size: 1.2rem;
   margin: 0 auto;
   padding-bottom: 2.5rem;
@@ -80,7 +81,7 @@ query {
 
   .header {
     align-items: center;
-    background-color: black;
+    background-color: #141d26;
     display: flex;
     height: 50px;
     justify-content: space-between;
@@ -135,16 +136,16 @@ query {
   }
 
   &.dark {
-    background-color: black;
+    background-color: #141d26;
 
     .header {
-        box-shadow: 1px 1px #383838;
+        box-shadow: 1px 1px #444;
     }
 
     .footer {
-      background-color: black;
+      background-color: #141d26;
       color: white;
-      box-shadow: -1px -1px #383838;
+      box-shadow: -1px -1px #444;
     }
   }
 }

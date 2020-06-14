@@ -5,8 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'jeanbairro.com',
-  titleTemplate: 'jeanbairro.com - %s',
+  titleTemplate: '%s | Jean Bairro',
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`
