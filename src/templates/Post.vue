@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section>
+    <section class="post-template">
       <header>
         <date-time :date="$page.post.date" :time-to-read="$page.post.timeToRead" />
         <h1>{{ $page.post.title }}</h1>
@@ -46,9 +46,13 @@ export default {
 </script>
 
 <style lang="less">
-  section {
-    margin: 0 auto;
+  @smallAndUp: ~"only screen and (min-width: 576px)";
+  
+  .post-template {
+    background-color: white;
+    margin: 2.4rem auto;
     max-width: 50rem;
+    padding: 0 1rem;
 
     header {
       h1 {
@@ -63,18 +67,32 @@ export default {
     }
 
     article {
-      margin: 2rem 0;
+      margin-top: 2rem;
     }
   }
 
   .dark {
-    section {
+    .post-template {
+      background-color: #141d26;
       color: #f5f5f5f2;
 
       header {
         h2 {
           color: #aaa;
         }
+      }
+    }
+  }
+
+  @media @smallAndUp {
+    .post-template {
+      box-shadow: 0 0 0 1px #3336381a;
+      padding: 2rem;
+    }
+    
+    .dark {
+      .post-template {
+        box-shadow: 0 0 0 1px #444;
       }
     }
   }

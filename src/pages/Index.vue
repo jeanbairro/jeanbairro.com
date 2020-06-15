@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section>
+    <section class="post-list">
       <g-link v-for="edge in $page.allPost.edges" 
         :key="edge.node.id" 
         :to="edge.node.path">
@@ -49,14 +49,28 @@ query {
 </script>
 
 <style lang="less">
-section {
+@smallAndUp: ~"only screen and (min-width: 576px)";
+
+.post-list {
   margin: 0 auto;
   max-width: 50rem;
+  padding: 0 0.8rem;
 
   a {
     &:hover {
       text-decoration: none;
     }
   }
+
+  .post {
+    margin-bottom: 1rem;
+  }
+}
+@media @smallAndUp {
+    .post-list {
+      &:last-child {
+        margin-bottom: 2.4rem;
+      }
+    }
 }
 </style>

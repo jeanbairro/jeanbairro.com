@@ -1,5 +1,5 @@
 <template>
-  <div class="layout" :class="{ dark: isDarkMode }"> 
+  <div class="layout" :class="{ 'dark' : isDarkMode, 'post-page': isPostPage }"> 
     <layout-header/>
     <transition name="fade" appear>
       <div class="container">
@@ -28,6 +28,11 @@ query {
       layoutFooter,
       layoutHeader
     },
+    computed: {
+      isPostPage() {
+        return this.$page.post;
+      }
+    },
     data: function () {
       return {
         isDarkMode: false
@@ -51,13 +56,19 @@ query {
 </script>
 
 <style lang="less">
+@smallAndUp: ~"only screen and (min-width: 576px)";
 
 .layout {
+  background-color: #eef0f1;
   color: #141d26;
   font-size: 1.2rem;
   margin: 0 auto;
   padding-bottom: 2.5rem;
   transition: color 0.5s ease 0s;
+
+  .container {
+    padding: 0;
+  }
 
   .fade-enter-active {
     transition: opacity .3s;
@@ -66,9 +77,25 @@ query {
   .fade-enter {
     opacity: 0;
   }
-  
+
+  &.post-page {
+    background-color: white;
+  }
+
   &.dark {
     background-color: #141d26;
+  }
+}
+@media @smallAndUp {
+  .layout {
+    
+    &.post-page {
+      background-color: #eef0f1;
+    }
+
+    &.dark {
+      background-color: #141d26;
+    }
   }
 }
 </style>
