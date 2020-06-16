@@ -30,6 +30,7 @@ query {
     },
     computed: {
       isPostPage() {
+        if (!this.$page) return false;
         return this.$page.post;
       }
     },
